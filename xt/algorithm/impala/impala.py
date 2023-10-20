@@ -23,7 +23,8 @@ import numpy as np
 from xt.algorithm.impala.default_config import BATCH_SIZE, GAMMA
 from zeus.common.util.common import import_config
 from xt.algorithm import Algorithm
-from xt.model.tf_compat import loss_to_val
+# from xt.model.tf_compat import loss_to_val
+from xt.model.ms_compat import loss_to_val, ms
 from zeus.common.util.register import Registers
 from xt.algorithm.alg_utils import DivideDistPolicy, FIFODistPolicy, EqualDistPolicy
 
@@ -80,7 +81,6 @@ class IMPALA(Algorithm):
             loss_list.append(loss_to_val(actor_loss))
 
         self._init_train_list()
-
         return np.mean(loss_list)
 
     def save(self, model_path, model_index):
