@@ -33,7 +33,7 @@ See https://arxiv.org/abs/1802.01561 for the full paper.
 
 from __future__ import absolute_import, division, print_function
 
-from xt.model.tf_compat import tf
+# from xt.model.tf_compat import tf
 
 
 def from_logic_outputs(behaviour_policy_logic_outputs,

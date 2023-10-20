@@ -28,7 +28,8 @@ from xt.algorithm import Algorithm
 from xt.algorithm.impala.default_config import BATCH_SIZE
 from zeus.common.ipc.uni_comm import UniComm
 from zeus.common.util.register import Registers
-from xt.model.tf_compat import loss_to_val
+# from xt.model.tf_compat import loss_to_val
+from xt.model.ms_compat import loss_to_val, ms
 from zeus.common.util.common import import_config
 from xt.algorithm.alg_utils import DivideDistPolicy, FIFODistPolicy, EqualDistPolicy
 

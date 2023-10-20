@@ -81,7 +81,9 @@ class IMPALA(Algorithm):
             loss_list.append(loss_to_val(actor_loss))
 
         self._init_train_list()
-        return np.mean(loss_list)
+        return np.mean(loss_list) # 原版
+        # return ms.numpy.mean(loss_list)
+        # return ms.numpy.mean(ms.numpy.array(loss_list))
 
     def save(self, model_path, model_index):
         """Save model."""

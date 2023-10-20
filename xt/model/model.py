@@ -21,8 +21,8 @@
 
 import os
 import glob
-from xt.model.tf_compat import tf, K, get_sess_graph
-from xt.model.pb_format import pb_model
+# from xt.model.tf_compat import tf, K, get_sess_graph
+# from xt.model.pb_format import pb_model
 
 os.environ["KERAS_BACKEND"] = "tensorflow"
 

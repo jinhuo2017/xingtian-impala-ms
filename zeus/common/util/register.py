@@ -33,7 +33,7 @@ try:
 except ModuleNotFoundError:
     xt = None
 from zeus import set_backend
-set_backend(backend='tensorflow', device_category='GPU')
+# set_backend(backend='tensorflow', device_category='GPU')
 
 
 class RegisterStub(object):  # pylint: disable=too-few-public-methods

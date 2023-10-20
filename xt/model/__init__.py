@@ -5,7 +5,8 @@ from __future__ import division, print_function
 
 from xt.framework import Registers
 from xt.model.model import XTModel
-from xt.model.tf_compat import tf
+# from xt.model.tf_compat import tf
+from xt.model.ms_compat import ms
 import zeus.common.util.common as common
 
 
